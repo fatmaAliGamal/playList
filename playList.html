@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+        section {
+            width: 600px
+        }
+        
+        #audio {
+            border: 2px solid #000;
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+        
+        ul {
+            border: 2px solid #000;
+        }
+        
+        .buttons {
+            background: rgb(172, 116, 13);
+        }
+        
+        .buttons li {
+            width: 100px;
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+            background: white;
+        }
+        
+        li:hover {
+            background: rgb(202, 72, 72);
+        }
+        
+        .buttons li button:hover {
+            background: rgb(160, 137, 137);
+        }
+        
+        ul li {
+            list-style: none;
+            text-align: center;
+            border: 2px solid #000;
+            margin: 10px;
+            background: rgb(180, 176, 176);
+        }
+        
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .sounds li.current-audio a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <audio id="audio" controls src="" preload="none">
+        </audio>
+
+        <ul class="buttons">
+            <li><button>shuffle</button></li>
+            <li><button>repeat</button></li>
+            <li><button>play</button></li>
+        </ul>
+        <ul class="sounds">
+            <li class="current-audio"><a href="sound1.mp3">sound1</a></li>
+            <li><a href="sound2.mp3">sound2</a></li>
+            <li><a href="sound3.mp3">sound3</a></li>
+        </ul>
+    </section>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="playList.js"></script>
+</body>
+
+</html>
